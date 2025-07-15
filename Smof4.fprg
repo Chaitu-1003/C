@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CSE LAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-08 11:27:06 AM"/>
+        <attribute name="created" value="Q1NFIExBQjtsYWIwMjAzNjsyMDI1LTA3LTA4OzExOjE5OjMxIEFNOzIyODE="/>
+        <attribute name="edited" value="Q1NFIExBQjtsYWIwMjAzNjsyMDI1LTA3LTA4OzExOjI3OjA2IEFNOzE7MjM5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="c"/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <input variable="d"/>
+            <if expression="a&lt;b &amp;&amp; a&lt;c &amp;&amp; a&lt;d">
+                <then>
+                    <output expression="&quot;A is smallest&quot;" newline="True"/>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&lt;a &amp;&amp; b&lt;c &amp;&amp; b&lt;d">
+                        <then>
+                            <output expression="&quot;B is smallest&quot;" newline="True"/>
+                            <output expression="b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="c&lt;a &amp;&amp; c&lt;b &amp;&amp; c&lt;d">
+                                <then>
+                                    <output expression="&quot;C is smallest&quot;" newline="True"/>
+                                    <output expression="c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;D is smallest&quot;" newline="True"/>
+                                    <output expression="d" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CSE LAB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-08 11:19:21 AM"/>
+        <attribute name="created" value="Q1NFIExBQjtsYWIwMjAzNjsyMDI1LTA3LTA4OzExOjEyOjA2IEFNOzIyNzY="/>
+        <attribute name="edited" value="Q1NFIExBQjtsYWIwMjAzNjsyMDI1LTA3LTA4OzExOjE5OjIxIEFNOzE7MjM4OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="c"/>
+            <if expression="a&gt;b &amp;&amp; a&gt;c">
+                <then>
+                    <output expression="&quot;Gratest number is a&quot;" newline="True"/>
+                    <output expression="a" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&gt;a &amp;&amp; b&gt;c">
+                        <then>
+                            <output expression="&quot;Greatest number is b&quot;" newline="True"/>
+                            <output expression="b" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Greatest number is c&quot;" newline="True"/>
+                            <output expression="c" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
